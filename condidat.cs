@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,16 +6,23 @@ using System.Threading.Tasks;
 
 namespace ExDiagrammeDeClasse
 {
-    
 
-        class condidat
+
+    class condidat
+    {
+        private string name;
+
+        private string Num;
+        public String getname()
         {
-            private string name
-            {
-                get;
-                set;
-            }
+            return name;
         }
+        public String getNum()
+        {
+            return name;
+        }
+
+
+
+    }
 }
-
-
