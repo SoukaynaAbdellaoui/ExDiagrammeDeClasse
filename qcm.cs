@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,23 +6,23 @@ using System.Threading.Tasks;
 
 namespace ExDiagrammeDeClasse
 {
-    internal class Qcm
+    internal class qcm
     {
 
 
 
-        class qcm: question
+        class Qcm : question
         {
-            private List<proposition> items;
-            private int ScoreInitial { get; set; }
+            private List<proposition> listeProposition;
 
-            public qcm(int score)
+
+            public Qcm()
             {
-                ScoreInitial = score;
+
             }
             public void ajouterproposition(proposition prop)
             {
-                items.Add(prop);
+                listeProposition.Add(prop);
             }
         }
     }
