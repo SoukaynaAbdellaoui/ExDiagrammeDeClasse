@@ -1,22 +1,38 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace ExDiagrammeDeClasse
 {
-   
-        class exam
+
+    class exam
+    {
+        private string num;
+        private string titre;
+        private DateTime date;
+        private int duree;
+        private List<question> listeQuestion;
+
+        public String getNum()
         {
-            private string id;
-            private string titre;
-            private DateTime ouverture;
-            private int duree;
-            private List<question> questionsList;
-            public void ajouterQuestion(question question)
-            {
-                questionsList.Add(question);
-            }
+            return num;
         }
+        public String gettitre()
+        {
+            return titre;
+        }
+        public DateTime getdate()
+        {
+            return date;
+        }
+
+        public void ajouterQuestion(question question)
+        {
+            listeQuestion.Add(question);
+
+        }
+    }
 }
