@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,13 +8,11 @@ namespace ExDiagrammeDeClasse
 {
     internal class questionOuverte
     {
-        internal string statement;
+        private string question;
 
-        public int ScoreInitiale { get; internal set; }
-
-        class QuestionOuverte :     question
+        public questionOuverte(string question)
         {
-
+            this.question = question;
         }
     }
 }
